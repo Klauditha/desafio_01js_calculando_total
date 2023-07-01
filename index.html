@@ -14,15 +14,15 @@
         </div>
         <div class="descripcion">Laptop Gamer AMD</div>
         <div class="cantidad">
-          <input type="number" class="input_cantidad"  min="1" max="50" placeholder="Cantidad" />
+          <input type="number" class="input_cantidad"  min="1" max="50" placeholder="Cantidad"/>
         </div>
         <div class="color">
-            <select class="input_cantidad" name="input_cantidad" placeholder="Color" >
+            <select class="select_color" name="select_color" placeholder="Color" >
                 <option value="-1">Color</option>
-                <option value="volvo">Rojo</option>
-                <option value="saab">Blanco</option>
-                <option value="fiat">Amarillo</option>
-                <option value="audi">Negro</option>
+                <option value="#ff0000">Rojo</option>
+                <option value="#008000">Verde</option>
+                <option value="#ffff00">Amarillo</option>
+                <option value="#000000">Negro</option>
               </select>
         </div>
         <div class="precio">
@@ -30,7 +30,16 @@
           <div class="valor_precio">400000</div>
         </div>
         <div class="calcular">
-          <button class="btn_calcular">Calcular</button>
+          <button class="btn_calcular" type="button" onclick="
+          total = document.querySelector('.total_resultado')
+          precio = document.querySelector('.valor_precio')
+          input_cantidad = document.querySelector('.input_cantidad')
+          cantidad = document.querySelector('.cantidad_resultado')
+          select_color = document.querySelector('.select_color')
+          div_color = document.querySelector('.div_color')
+          cantidad.innerHTML = input_cantidad.value
+          div_color.style.backgroundColor = select_color.value
+          total.innerHTML = '$' +parseInt(precio.innerHTML) * parseInt(input_cantidad.value)">Calcular</button>
         </div>
       </div>
       <div class="div_resultado">
