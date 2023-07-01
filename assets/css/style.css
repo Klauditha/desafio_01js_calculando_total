@@ -14,15 +14,37 @@
     align-items: center;
 }
 
+.div_resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .imagen img{
     height: 200px;
 }
 .precio{
     display:flex;
 }
+
+.input_cantidad, input_color{
+    width:150px;
+}
 .btn_calcular{
     background-color:yellow;
     width:150px;
     height: 40px;
     border-radius: 10px;
+}
+
+.total , .cantidad , .color{
+    display: flex;
+}
+
+.div_color{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50% ;
+    
 }

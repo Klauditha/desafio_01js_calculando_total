@@ -14,9 +14,17 @@
         </div>
         <div class="descripcion">Laptop Gamer AMD</div>
         <div class="cantidad">
-          <input type="input_cantidad"  min="1" max="50" placeholder="Cantidad" />
+          <input type="number" class="input_cantidad"  min="1" max="50" placeholder="Cantidad" />
         </div>
-        <div class="color"></div>
+        <div class="color">
+            <select class="input_cantidad" name="input_cantidad" placeholder="Color" >
+                <option value="-1">Color</option>
+                <option value="volvo">Rojo</option>
+                <option value="saab">Blanco</option>
+                <option value="fiat">Amarillo</option>
+                <option value="audi">Negro</option>
+              </select>
+        </div>
         <div class="precio">
           <div class="label_precio">Precio:</div>
           <div class="valor_precio">400000</div>
@@ -36,7 +44,9 @@
         </div>
         <div class="color">
           <div class="color_label">Color:</div>
-          <div class="color_resultado"></div>
+          <div class="color_resultado">
+            <div class="div_color"></div>
+          </div>
         </div>
       </div>
     </div>
