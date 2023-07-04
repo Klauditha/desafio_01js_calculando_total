@@ -39,7 +39,7 @@
           div_color = document.querySelector('.div_color')
           cantidad.innerHTML = input_cantidad.value
           div_color.style.backgroundColor = select_color.value
-          total.innerHTML = '$' +parseInt(precio.innerHTML) * parseInt(input_cantidad.value)">Calcular</button>
+          total.innerHTML = '$ ' + (parseInt(precio.innerHTML) * parseInt(input_cantidad.value)).toLocaleString()">Calcular</button>
         </div>
       </div>
       <div class="div_resultado">
